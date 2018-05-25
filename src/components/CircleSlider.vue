@@ -8,8 +8,10 @@
     >
       <g>
         <circle :stroke="circleColor" fill="none" :stroke-width="cpMainCircleStrokeWidth" :cx="cpCenter" :cy="cpCenter" :r="radius"></circle>
+        <text :x="50" :y="57" alignment-baseline="middle" text-anchor="middle" :x="cpCenter" :y="cpCenter" :fill="textColor" class="knob-control__text-display">{{currentStepValue}}</text>
         <path :stroke="progressColor" fill="none" :stroke-width="cpPathStrokeWidth" :d="cpPathD"></path>
         <circle :fill="knobColor" :r="cpKnobRadius" :cx="cpPathX" :cy="cpPathY"></circle>
+
       </g>
     </svg>
   </div>
